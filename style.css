@@ -1,0 +1,518 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 15px;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+.wrapper {
+  margin: 0 auto;
+  background: rgb(101, 101, 111);
+  background: linear-gradient(0deg, rgba(101, 101, 111, 0.9794511555) 23%, rgba(148, 64, 64, 0.8309917717) 51%, rgba(203, 86, 42, 0.4416360294) 82%);
+}
+.wrapper .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+}
+.wrapper .container .header {
+  height: 100px;
+  width: 100%;
+  text-align: center;
+  line-height: 100px;
+  text-transform: uppercase;
+  font-family: "Fascinate Inline", cursive;
+  font-size: 58px;
+}
+.wrapper .container .header .title {
+  text-shadow: 1px 1px 15px grey;
+}
+.wrapper .container .start_page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+  width: 100vh;
+  border-radius: 65px;
+  margin-top: 50px;
+  box-shadow: 2px 2px 15px 6px aquamarine;
+  background: rgb(41, 41, 52);
+  background: linear-gradient(180deg, rgba(41, 41, 52, 0.9794511555) 23%, rgba(148, 64, 64, 0.8309917717) 51%, rgba(179, 97, 66, 0.4416360294) 82%);
+  animation: myglow 1s infinite;
+  animation-direction: alternate;
+}
+.wrapper .container .start_page .start_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.wrapper .container .start_page .start_container h3 {
+  font-family: "Kdam Thmor Pro", sans-serif;
+  text-shadow: 1px 1px 9px grey;
+  color: rgb(52, 48, 40);
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+.wrapper .container .start_page .start_container .players_name_input {
+  margin-bottom: 40px;
+  font-size: 20px;
+  text-transform: uppercase;
+  border-radius: 25px;
+  color: rgb(193, 188, 188);
+  text-align: center;
+  font-family: "Kdam Thmor Pro", sans-serif;
+  background: rgb(148, 64, 64);
+  background: linear-gradient(0deg, rgba(148, 64, 64, 0.8309917717) 51%, rgba(199, 85, 42, 0.1699273459) 82%);
+}
+.wrapper .container .start_page .start_container .players_name_input:focus {
+  border: 1px solid white;
+}
+.wrapper .container .start_page .start_container .start_btn {
+  width: 150px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  font-family: "Fascinate Inline", cursive;
+  font-size: 35px;
+  transition: font-size 1s;
+  color: rgb(64, 61, 61);
+}
+.wrapper .container .start_page .start_container .start_btn > a:link {
+  color: rgb(64, 61, 61);
+}
+.wrapper .container .start_page .start_container .start_btn > a:visited {
+  color: rgb(64, 61, 61);
+}
+.wrapper .container .start_page .start_container .start_btn > a:hover {
+  transition: font-size 1s;
+  font-size: 38px;
+  animation: mytextglow 1s infinite;
+  animation-direction: alternate;
+  color: aquamarine;
+}
+@keyframes mytextglow {
+  0% {
+    text-shadow: 1px 1px 1px aquamarine;
+  }
+  25% {
+    text-shadow: 1px 2px 5px aquamarine;
+  }
+  50% {
+    text-shadow: 2px 2px 10px aquamarine;
+  }
+  75% {
+    text-shadow: 2px 2px 15px aquamarine;
+  }
+  100% {
+    text-shadow: 2px 2px 20px aquamarine;
+  }
+}
+.wrapper .container .start_page .start_container .start_btn > a:active {
+  color: rgb(64, 61, 61);
+}
+@keyframes myglow {
+  0% {
+    box-shadow: 1px 1px 1px 1px aquamarine;
+  }
+  20% {
+    box-shadow: 1px 1px 3px 2px aquamarine;
+  }
+  40% {
+    box-shadow: 1px 1px 5px 3px aquamarine;
+  }
+  60% {
+    box-shadow: 2px 2px 10px 4px aquamarine;
+  }
+  80% {
+    box-shadow: 2px 2px 15px 5px aquamarine;
+  }
+  100% {
+    box-shadow: 2px 2px 20px 6px aquamarine;
+  }
+}
+.wrapper .container .main {
+  flex-grow: 1;
+  display: none;
+  flex-direction: row;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+}
+.wrapper .container .main #game_field {
+  display: flex;
+  flex-wrap: wrap;
+  width: 484px;
+  height: 484px;
+  box-shadow: inset 1px 1px 20px rgba(27, 107, 107, 0.718);
+  background-color: rgba(22, 22, 21, 0.887);
+}
+.wrapper .container .main #game_field .cell {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 24px;
+  height: 24px;
+}
+.wrapper .container .main #game_field .snake_head {
+  background-image: url(../img/snake_head.jpeg);
+  background-position: center;
+  background-size: cover;
+  border-radius: 50%;
+}
+.wrapper .container .main #game_field .snake_body {
+  box-shadow: 1px 1px 5px aquamarine;
+  background: rgb(61, 110, 47);
+  background: radial-gradient(circle, rgb(61, 110, 47) 21%, rgba(22, 22, 21, 0.0802914916) 65%);
+}
+.wrapper .container .main #game_field .snake_food {
+  background-image: url(../img/snakeFood.png);
+  background-position: center;
+  background-size: cover;
+}
+.wrapper .container .main .score_column {
+  width: 30vh;
+  height: 484px;
+}
+.wrapper .container .main .score_column .score_block {
+  display: flex;
+  flex-direction: column;
+  padding-top: 25px;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  box-shadow: 1px 1px 20px rgba(27, 107, 107, 0.718);
+  background: rgba(22, 22, 21, 0.887);
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px;
+}
+.wrapper .container .main .score_column .score_block .player_name_style {
+  height: 10%;
+  width: 90%;
+  font-size: 30px;
+  line-height: 36px;
+  color: rgba(170, 145, 73, 0.731);
+  text-transform: uppercase;
+  font-family: "Kdam Thmor Pro", sans-serif;
+  text-shadow: 1px 1px 9px grey;
+  margin-bottom: 10px;
+}
+.wrapper .container .main .score_column .score_block .player_score_style {
+  padding-top: 10px;
+  height: 10%;
+  width: 90%;
+  font-size: 30px;
+  line-height: 36px;
+  color: rgba(170, 145, 73, 0.731);
+  text-transform: uppercase;
+  font-family: "Kdam Thmor Pro", sans-serif;
+  text-shadow: 1px 1px 9px grey;
+  margin-bottom: 70px;
+}
+.wrapper .container .main .score_column .score_block .pause_btn {
+  width: 150px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  font-family: "Fascinate Inline", cursive;
+  font-size: 35px;
+  transition: 1s;
+}
+.wrapper .container .main .score_column .score_block .pause_btn > a:link {
+  color: rgb(64, 61, 61);
+}
+.wrapper .container .main .score_column .score_block .pause_btn > a:visited {
+  color: rgb(64, 61, 61);
+}
+.wrapper .container .main .score_column .score_block .pause_btn > a:hover {
+  transition: 1s;
+  animation: mytextglow 1s infinite;
+  animation-direction: alternate;
+  color: aquamarine;
+}
+@keyframes mytextglow {
+  0% {
+    text-shadow: 1px 1px 1px aquamarine;
+  }
+  25% {
+    text-shadow: 1px 2px 5px aquamarine;
+  }
+  50% {
+    text-shadow: 2px 2px 10px aquamarine;
+  }
+  75% {
+    text-shadow: 2px 2px 15px aquamarine;
+  }
+  100% {
+    text-shadow: 2px 2px 20px aquamarine;
+  }
+}
+.wrapper .container .main .score_column .score_block .pause_btn > a:active {
+  color: rgb(64, 61, 61);
+}
+.wrapper .container .main .score_column .score_block .pause_btn_active {
+  animation: mytextglow 1s infinite;
+  animation-direction: alternate;
+  color: aquamarine;
+}
+.wrapper .container .main .score_column .score_block .pause_btn_active > a:link {
+  color: rgb(64, 61, 61);
+}
+.wrapper .container .main .score_column .score_block .pause_btn_active > a:visited {
+  color: rgb(64, 61, 61);
+}
+.wrapper .container .main .score_column .score_block .pause_btn_active > a:hover {
+  animation: mytextglow 1s infinite;
+  animation-direction: alternate;
+  color: aquamarine;
+}
+@keyframes mytextglow {
+  0% {
+    text-shadow: 1px 1px 1px aquamarine;
+  }
+  25% {
+    text-shadow: 1px 2px 5px aquamarine;
+  }
+  50% {
+    text-shadow: 2px 2px 10px aquamarine;
+  }
+  75% {
+    text-shadow: 2px 2px 15px aquamarine;
+  }
+  100% {
+    text-shadow: 2px 2px 20px aquamarine;
+  }
+}
+.wrapper .container .main .score_column .score_block .resume_button {
+  visibility: hidden;
+  width: 150px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  font-family: "Fascinate Inline", cursive;
+  font-size: 35px;
+  animation: mytextglow 1s infinite;
+  animation-direction: alternate;
+  color: aquamarine;
+}
+.wrapper .container .main .score_column .score_block .resume_button > a:link {
+  color: aquamarine;
+}
+.wrapper .container .main .score_column .score_block .resume_button > a:visited {
+  color: aquamarine;
+}
+.wrapper .container .main .score_column .score_block .resume_button > a:hover {
+  color: azure;
+}
+@keyframes mytextglow {
+  0% {
+    text-shadow: 1px 1px 1px aquamarine;
+  }
+  25% {
+    text-shadow: 1px 2px 5px aquamarine;
+  }
+  50% {
+    text-shadow: 2px 2px 10px aquamarine;
+  }
+  75% {
+    text-shadow: 2px 2px 15px aquamarine;
+  }
+  100% {
+    text-shadow: 2px 2px 20px aquamarine;
+  }
+}
+.wrapper .container .main .score_column .score_block .resume_button > a:active {
+  color: aquamarine;
+}
+.wrapper .container .main .best_score_column {
+  width: 30vh;
+  height: 484px;
+}
+.wrapper .container .main .best_score_column .best_score_block {
+  display: flex;
+  flex-direction: column;
+  padding-top: 25px;
+  align-items: center;
+  text-align: right;
+  width: 100%;
+  height: 100%;
+  box-shadow: 1px 1px 20px rgba(27, 107, 107, 0.718);
+  background: rgba(22, 22, 21, 0.887);
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+}
+.wrapper .container .main .best_score_column .best_score_block .best_block_title {
+  height: 10%;
+  width: 90%;
+  font-size: 30px;
+  line-height: 36px;
+  color: rgba(170, 145, 73, 0.731);
+  text-transform: uppercase;
+  font-family: "Kdam Thmor Pro", sans-serif;
+  text-shadow: 1px 1px 9px grey;
+  margin-bottom: 10px;
+}
+.wrapper .container .main .best_score_column .best_score_block .best_player_name {
+  height: 10%;
+  width: 90%;
+  font-size: 30px;
+  line-height: 36px;
+  color: rgba(170, 145, 73, 0.731);
+  text-transform: uppercase;
+  font-family: "Kdam Thmor Pro", sans-serif;
+  text-shadow: 1px 1px 9px grey;
+  margin-bottom: 10px;
+}
+.wrapper .container .main .best_score_column .best_score_block .best_player_score {
+  padding-top: 10px;
+  height: 10%;
+  width: 90%;
+  font-size: 30px;
+  line-height: 36px;
+  color: rgba(170, 145, 73, 0.731);
+  text-transform: uppercase;
+  font-family: "Kdam Thmor Pro", sans-serif;
+  text-shadow: 1px 1px 9px grey;
+}
+.wrapper .container .game_over_page {
+  display: none;
+  width: 100vh;
+  height: 100vh;
+  margin: 0 auto;
+}
+.wrapper .container .game_over_page .game_over_block {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 25vh;
+}
+.wrapper .container .game_over_page .game_over_block .game_over_text {
+  font-family: "Kdam Thmor Pro", sans-serif;
+  text-shadow: 6px 4px 32px rgb(245, 245, 245);
+  color: rgb(52, 48, 40);
+  font-size: 24px;
+  margin-bottom: 100px;
+}
+.wrapper .container .game_over_page .game_over_block .new_game_button #new_game_btn {
+  display: block;
+  font-family: "Kdam Thmor Pro", sans-serif;
+  font-size: 24px;
+  transition: 1s;
+}
+.wrapper .container .game_over_page .game_over_block .new_game_button #new_game_btn:link {
+  color: rgb(64, 61, 61);
+}
+.wrapper .container .game_over_page .game_over_block .new_game_button #new_game_btn:visited {
+  color: rgb(64, 61, 61);
+}
+.wrapper .container .game_over_page .game_over_block .new_game_button #new_game_btn:hover {
+  transition: font-size 1s;
+  font-size: 38px;
+  animation: mytextglow 1s infinite;
+  animation-direction: alternate;
+  color: aquamarine;
+}
+@keyframes mytextglow {
+  0% {
+    text-shadow: 1px 1px 1px aquamarine;
+  }
+  25% {
+    text-shadow: 1px 2px 5px aquamarine;
+  }
+  50% {
+    text-shadow: 2px 2px 10px aquamarine;
+  }
+  75% {
+    text-shadow: 2px 2px 15px aquamarine;
+  }
+  100% {
+    text-shadow: 2px 2px 20px aquamarine;
+  }
+}
+.wrapper .container .game_over_page .game_over_block .new_game_button #new_game_btn > a:active {
+  color: rgb(64, 61, 61);
+}
+.wrapper .container .footer {
+  display: flex;
+  flex-direction: column;
+  visibility: hidden;
+  padding-top: 40px;
+  height: 100px;
+  width: 100%;
+  font-family: "Poppins", sans-serif;
+  font-size: 24px;
+  text-align: center;
+  text-transform: uppercase;
+  color: rgb(193, 188, 188);
+  font-family: "Kdam Thmor Pro", sans-serif;
+}/*# sourceMappingURL=style.css.map */

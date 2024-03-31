@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Snake_v_1.0_project/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fascinate+Inline&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap" rel="stylesheet">
+    <title>SNAKE v1.00</title>
+</head>
+<body>
+
+    <div id="wrapper" class="wrapper">
+
+        <div class="container">
+
+            <div class="header">
+
+                <h3 class="title">snake</h3>
+
+            </div>
+
+                <section id="snake_start_page" class="start_page">
+                    <div class="start_container">
+                        
+                         <input class="players_name_input" type="text" placeholder="enter Players name" id="players_Name">
+                         <div class="start_btn">
+                            <a id="start_btn" href="#">Start</a>
+                        </div>
+                    </div>
+                </section>
+
+                <div id="main_game_page" class="main">
+                    
+                    <div class="score_column">
+
+                        <div class="score_block">
+
+                            <div id="gamer_name" class="player_name_style"></div>
+                            <div id="player_score" class="player_score_style">Score:</div>
+
+                            <div class="pause_btn">
+                                <a id="pause_btn"  href="#">pause</a>
+                            </div>
+
+                            <div class="resume_button">
+                                <a id="resume_button"  href="#">resume</a>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div id="game_field">
+
+                    </div>
+
+                    <div class="best_score_column">
+                        <div class="best_score_block">
+                            <h3 class="best_block_title">best score:</h3>
+                            <div id="best_player" class="best_player_name"></div>
+                            <div id="best_player_score"  class="best_player_score"></div>
+                        </div>
+                    </div>
+                         
+                </div>
+
+                <section id="game_over_message" class="game_over_page">
+
+                    <div class="game_over_block">
+
+                        <p class="game_over_text" >You loose. Don’t eat  yourself - improve your skills!</p>
+                        <div class="new_game_button">
+                            <a id="new_game_btn" href="#">New Game?</a>
+                        </div>
+                    </div>
+                </section>
+
+            <div class="footer"><p>Never Give up!</p>
+                <audio class="audio_track" autoplay="autoplay" controls="controls" >
+                    <source src="../audio/background.mp3" />     
+                </audio>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="../js/script.js"></script>
+    <!-- <script src="../js/scriptRESERVEDCOPY.js"></script> -->
+    
+</body>
+</html>
