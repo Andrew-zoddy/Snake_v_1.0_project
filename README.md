@@ -4,3 +4,5 @@ Hi, hope you'll like the game =)
 This is a simple Snake game written on js.)
 Unfortunately it is not adapted to the mobile usage.
 Going to add some new features soon.
+<br/>
+try it : https://andrew-zoddy.github.io/Snake_v_1.0_project/
