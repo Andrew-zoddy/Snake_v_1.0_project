@@ -106,6 +106,8 @@ h1, h2, h3, h4, h5, h6 {
   background: linear-gradient(180deg, rgba(41, 41, 52, 0.9794511555) 23%, rgba(148, 64, 64, 0.8309917717) 51%, rgba(179, 97, 66, 0.4416360294) 82%);
   animation: myglow 1s infinite;
   animation-direction: alternate;
+  max-width: 50%;
+  min-width: 300px;
 }
 .wrapper .container .start_page .start_container {
   display: flex;
@@ -431,6 +433,7 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Kdam Thmor Pro", sans-serif;
   text-shadow: 1px 1px 9px grey;
   margin-bottom: 10px;
+  padding-top: 10px;
 }
 .wrapper .container .main .best_score_column .best_score_block .best_player_score {
   padding-top: 10px;
