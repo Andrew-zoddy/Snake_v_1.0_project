@@ -104,10 +104,8 @@ h1, h2, h3, h4, h5, h6 {
   box-shadow: 2px 2px 15px 6px aquamarine;
   background: rgb(41, 41, 52);
   background: linear-gradient(180deg, rgba(41, 41, 52, 0.9794511555) 23%, rgba(148, 64, 64, 0.8309917717) 51%, rgba(179, 97, 66, 0.4416360294) 82%);
-  -webkit-animation: myglow 1s infinite;
-          animation: myglow 1s infinite;
-  -webkit-animation-direction: alternate;
-          animation-direction: alternate;
+  animation: myglow 1s infinite;
+  animation-direction: alternate;
 }
 .wrapper .container .start_page .start_container {
   display: flex;
@@ -158,28 +156,9 @@ h1, h2, h3, h4, h5, h6 {
 .wrapper .container .start_page .start_container .start_btn > a:hover {
   transition: font-size 1s;
   font-size: 38px;
-  -webkit-animation: mytextglow 1s infinite;
-          animation: mytextglow 1s infinite;
-  -webkit-animation-direction: alternate;
-          animation-direction: alternate;
+  animation: mytextglow 1s infinite;
+  animation-direction: alternate;
   color: aquamarine;
-}
-@-webkit-keyframes mytextglow {
-  0% {
-    text-shadow: 1px 1px 1px aquamarine;
-  }
-  25% {
-    text-shadow: 1px 2px 5px aquamarine;
-  }
-  50% {
-    text-shadow: 2px 2px 10px aquamarine;
-  }
-  75% {
-    text-shadow: 2px 2px 15px aquamarine;
-  }
-  100% {
-    text-shadow: 2px 2px 20px aquamarine;
-  }
 }
 @keyframes mytextglow {
   0% {
@@ -200,26 +179,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 .wrapper .container .start_page .start_container .start_btn > a:active {
   color: rgb(64, 61, 61);
-}
-@-webkit-keyframes myglow {
-  0% {
-    box-shadow: 1px 1px 1px 1px aquamarine;
-  }
-  20% {
-    box-shadow: 1px 1px 3px 2px aquamarine;
-  }
-  40% {
-    box-shadow: 1px 1px 5px 3px aquamarine;
-  }
-  60% {
-    box-shadow: 2px 2px 10px 4px aquamarine;
-  }
-  80% {
-    box-shadow: 2px 2px 15px 5px aquamarine;
-  }
-  100% {
-    box-shadow: 2px 2px 20px 6px aquamarine;
-  }
 }
 @keyframes myglow {
   0% {
@@ -265,7 +224,7 @@ h1, h2, h3, h4, h5, h6 {
   height: 24px;
 }
 .wrapper .container .main #game_field .snake_head {
-  background-image: url(../img/snake_head.jpeg);
+  background-image: url(/Snake_v_1.0_project/snake_head.jpeg);
   background-position: center;
   background-size: cover;
   border-radius: 50%;
@@ -276,7 +235,7 @@ h1, h2, h3, h4, h5, h6 {
   background: radial-gradient(circle, rgb(61, 110, 47) 21%, rgba(22, 22, 21, 0.0802914916) 65%);
 }
 .wrapper .container .main #game_field .snake_food {
-  background-image: url(../img/snakeFood.png);
+  background-image: url(/Snake_v_1.0_project/snakeFood.png);
   background-position: center;
   background-size: cover;
 }
@@ -336,10 +295,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 .wrapper .container .main .score_column .score_block .pause_btn > a:hover {
   transition: 1s;
-  -webkit-animation: mytextglow 1s infinite;
-          animation: mytextglow 1s infinite;
-  -webkit-animation-direction: alternate;
-          animation-direction: alternate;
+  animation: mytextglow 1s infinite;
+  animation-direction: alternate;
   color: aquamarine;
 }
 @keyframes mytextglow {
@@ -363,10 +320,8 @@ h1, h2, h3, h4, h5, h6 {
   color: rgb(64, 61, 61);
 }
 .wrapper .container .main .score_column .score_block .pause_btn_active {
-  -webkit-animation: mytextglow 1s infinite;
-          animation: mytextglow 1s infinite;
-  -webkit-animation-direction: alternate;
-          animation-direction: alternate;
+  animation: mytextglow 1s infinite;
+  animation-direction: alternate;
   color: aquamarine;
 }
 .wrapper .container .main .score_column .score_block .pause_btn_active > a:link {
@@ -376,10 +331,8 @@ h1, h2, h3, h4, h5, h6 {
   color: rgb(64, 61, 61);
 }
 .wrapper .container .main .score_column .score_block .pause_btn_active > a:hover {
-  -webkit-animation: mytextglow 1s infinite;
-          animation: mytextglow 1s infinite;
-  -webkit-animation-direction: alternate;
-          animation-direction: alternate;
+  animation: mytextglow 1s infinite;
+  animation-direction: alternate;
   color: aquamarine;
 }
 @keyframes mytextglow {
@@ -407,10 +360,8 @@ h1, h2, h3, h4, h5, h6 {
   text-align: center;
   font-family: "Fascinate Inline", cursive;
   font-size: 35px;
-  -webkit-animation: mytextglow 1s infinite;
-          animation: mytextglow 1s infinite;
-  -webkit-animation-direction: alternate;
-          animation-direction: alternate;
+  animation: mytextglow 1s infinite;
+  animation-direction: alternate;
   color: aquamarine;
 }
 .wrapper .container .main .score_column .score_block .resume_button > a:link {
@@ -527,10 +478,8 @@ h1, h2, h3, h4, h5, h6 {
 .wrapper .container .game_over_page .game_over_block .new_game_button #new_game_btn:hover {
   transition: font-size 1s;
   font-size: 38px;
-  -webkit-animation: mytextglow 1s infinite;
-          animation: mytextglow 1s infinite;
-  -webkit-animation-direction: alternate;
-          animation-direction: alternate;
+  animation: mytextglow 1s infinite;
+  animation-direction: alternate;
   color: aquamarine;
 }
 @keyframes mytextglow {

@@ -10,11 +10,11 @@ let snakeFood;
 let startGame;
 
 let inputVal = document.getElementById('players_Name');
-let playerName = document.getElementById('gamer_name');
+let playerName = document.getElementById('gamer_name');  // players name get
 
 
 let bestScore = document.getElementById('best_player_score');
-let bestPlayer = document.getElementById('best_player');
+let bestPlayer = document.getElementById('best_player'); // best player
 
 const gameScores = [];
 
@@ -29,7 +29,11 @@ const resumeBtn = document.getElementById('resume_button');
 const gameOverPage = document.getElementById('game_over_message');
 const newGameBtn = document.getElementById('new_game_btn');
 
-bestScore.innerHTML = localStorage.getItem('best score') // putting best value from local storage
+
+    bestScore.innerHTML = localStorage.getItem('best score') // putting best value from local storage
+    bestPlayer.innerHTML = localStorage.getItem('best player')
+
+
 
 
 // initilisation function
@@ -155,10 +159,12 @@ function snakeDrawing(direction) {
     // adding best score
 
     
-    if (gameScore > +localStorage.getItem('best score')) {
+    while (gameScore > +localStorage.getItem('best score')) {
         bestScore.innerHTML = gameScore
         bestPlayer.innerHTML = playerName.innerHTML
         localStorage.setItem('best score', bestScore.innerHTML)
+        localStorage.setItem('best player', bestPlayer.innerHTML)
+
     }
     
 
