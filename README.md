@@ -1,2 +1,6 @@
-# Snake_v_1.0_project
-This is a simple Snake game written on js. with laaaarge amount of time given while developing)
+# Snake_v_1.1.0_project
+<br/>
+Hi, hope you'll like the game =)
+This is a simple Snake game written on js.)
+Unfortunately it is not adapted to the mobile usage.
+Going to add some new features soon.

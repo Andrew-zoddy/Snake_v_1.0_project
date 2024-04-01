@@ -1,31 +1,36 @@
 @import "null.scss";
 
-.wrapper{
+.wrapper {
     margin: 0 auto;
-    background: rgb(101,101,111);
-    background: linear-gradient(0deg, rgba(101,101,111,0.9794511554621849) 23%, rgba(148,64,64,0.8309917717086834) 51%, rgba(203,86,42,0.4416360294117647) 82%);
-    .container{
+    // min-width: 100vh;
+    background: rgb(101, 101, 111);
+    background: linear-gradient(
+        0deg,
+        rgba(101, 101, 111, 0.9794511554621849) 23%,
+        rgba(148, 64, 64, 0.8309917717086834) 51%,
+        rgba(203, 86, 42, 0.4416360294117647) 82%
+    );
+    .container {
         display: flex;
         flex-direction: column;
         align-items: center;
         min-height: 100vh;
-        .header{
+        .header {
             height: 100px;
             width: 100%;
             //background-color: rgb(255, 255, 255);
             text-align: center;
             line-height: 100px;
             text-transform: uppercase;
-            font-family: 'Fascinate Inline', cursive;            
+            font-family: "Fascinate Inline", cursive;
             font-size: 58px;
-            
-            .title{
+
+            .title {
                 text-shadow: 1px 1px 15px grey;
             }
-           
         }
 
-        .start_page{
+        .start_page {
             display: flex; // <======= this flex for start page / game over event
             flex-direction: column;
             justify-content: center;
@@ -35,13 +40,19 @@
             border-radius: 65px;
             margin-top: 50px;
             box-shadow: 2px 2px 15px 6px aquamarine;
-            background: rgb(41,41,52);
-            background: linear-gradient(180deg, rgba(41,41,52,0.9794511554621849) 23%, rgba(148,64,64,0.8309917717086834) 51%, rgba(179,97,66,0.4416360294117647) 82%);
+            background: rgb(41, 41, 52);
+            background: linear-gradient(
+                180deg,
+                rgba(41, 41, 52, 0.9794511554621849) 23%,
+                rgba(148, 64, 64, 0.8309917717086834) 51%,
+                rgba(179, 97, 66, 0.4416360294117647) 82%
+            );
             animation: myglow 1s infinite;
             animation-direction: alternate;
+            max-width: 50%;
+            min-width: 300px;
 
-
-            .start_container{
+            .start_container {
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
@@ -50,44 +61,48 @@
                 text-align: center;
                 text-transform: uppercase;
 
-                h3{
-                    font-family: 'Kdam Thmor Pro', sans-serif;
+                h3 {
+                    font-family: "Kdam Thmor Pro", sans-serif;
                     text-shadow: 1px 1px 9px grey;
                     color: rgb(52, 48, 40);
                     font-size: 24px;
                     margin-bottom: 20px;
                 }
-                .players_name_input{
+                .players_name_input {
                     margin-bottom: 40px;
                     font-size: 20px;
                     text-transform: uppercase;
                     border-radius: 25px;
                     color: rgb(193, 188, 188);
                     text-align: center;
-                    font-family: 'Kdam Thmor Pro', sans-serif;
-                    background: rgb(148,64,64);
-                    background: linear-gradient(0deg, rgba(148,64,64,0.8309917717086834) 51%, rgba(199,85,42,0.16992734593837533) 82%);
-                    &:focus{
+                    font-family: "Kdam Thmor Pro", sans-serif;
+                    background: rgb(148, 64, 64);
+                    background: linear-gradient(
+                        0deg,
+                        rgba(148, 64, 64, 0.8309917717086834) 51%,
+                        rgba(199, 85, 42, 0.16992734593837533) 82%
+                    );
+                    &:focus {
                         border: 1px solid white;
                     }
                 }
-                .start_btn{
+                .start_btn {
                     width: 150px;
                     height: 50px;
                     line-height: 50px;
                     text-align: center;
-                    font-family: 'Fascinate Inline', cursive;
+                    font-family: "Fascinate Inline", cursive;
                     font-size: 35px;
                     transition: font-size 1s;
                     color: rgb(64, 61, 61);
-        
-                    &>a:link{
+
+                    & > a:link {
                         color: rgb(64, 61, 61);
                     }
-                    &>a:visited{
+                    & > a:visited {
                         color: rgb(64, 61, 61);
                     }
-                    &>a:hover{
+                    & > a:hover {
                         transition: font-size 1s;
                         font-size: 38px;
                         animation: mytextglow 1s infinite;
@@ -95,46 +110,65 @@
                         color: aquamarine;
                     }
                     @keyframes mytextglow {
-                        0% {text-shadow: 1px 1px 1px aquamarine;} 
-                        25% {text-shadow: 1px 2px 5px  aquamarine;}
-                        50% {text-shadow: 2px 2px 10px  aquamarine;}
-                        75% {text-shadow: 2px 2px 15px  aquamarine;}
-                        100% {text-shadow: 2px 2px 20px  aquamarine;}
-                     }
-                    &>a:active{
+                        0% {
+                            text-shadow: 1px 1px 1px aquamarine;
+                        }
+                        25% {
+                            text-shadow: 1px 2px 5px aquamarine;
+                        }
+                        50% {
+                            text-shadow: 2px 2px 10px aquamarine;
+                        }
+                        75% {
+                            text-shadow: 2px 2px 15px aquamarine;
+                        }
+                        100% {
+                            text-shadow: 2px 2px 20px aquamarine;
+                        }
+                    }
+                    & > a:active {
                         color: rgb(64, 61, 61);
                     }
                 }
-                
             }
-
         }
         @keyframes myglow {
-           0% {box-shadow: 1px 1px 1px 1px aquamarine;} 
-           20% {box-shadow: 1px 1px 3px 2px aquamarine;}
-           40% {box-shadow: 1px 1px 5px 3px aquamarine;}
-           60% {box-shadow: 2px 2px 10px 4px aquamarine;}
-           80% {box-shadow: 2px 2px 15px 5px aquamarine;}
-           100% {box-shadow: 2px 2px 20px 6px aquamarine;}
+            0% {
+                box-shadow: 1px 1px 1px 1px aquamarine;
+            }
+            20% {
+                box-shadow: 1px 1px 3px 2px aquamarine;
+            }
+            40% {
+                box-shadow: 1px 1px 5px 3px aquamarine;
+            }
+            60% {
+                box-shadow: 2px 2px 10px 4px aquamarine;
+            }
+            80% {
+                box-shadow: 2px 2px 15px 5px aquamarine;
+            }
+            100% {
+                box-shadow: 2px 2px 20px 6px aquamarine;
+            }
         }
 
-        .main{
+        .main {
             flex-grow: 1;
             display: none; ///// <===== this none for start page / game over event
             flex-direction: row;
             margin: 0 auto;
             justify-content: center;
             align-items: center;
-            
 
-            #game_field{
+            #game_field {
                 display: flex;
                 flex-wrap: wrap;
                 width: 484px;
                 height: 484px;
                 box-shadow: inset 1px 1px 20px rgba(27, 107, 107, 0.718);
                 background-color: rgba(22, 22, 21, 0.887);
-                .cell{
+                .cell {
                     display: flex;
                     justify-content: center;
                     align-items: center;
@@ -143,53 +177,56 @@
                     //border-left: 1px solid lightblue;
                     //border-top: 1px solid lightblue;
                 }
-                .snake_head{
+                .snake_head {
                     background-image: url(/Snake_v_1.0_project/snake_head.jpeg);
                     background-position: center;
                     background-size: cover;
                     border-radius: 50%;
                 }
-                .snake_body{
+                .snake_body {
                     box-shadow: 1px 1px 5px aquamarine;
-                    background: rgb(61,110,47);
-                    background: radial-gradient(circle, rgba(61,110,47,1) 21%, rgba(22,22,21,0.08029149159663862) 65%);
+                    background: rgb(61, 110, 47);
+                    background: radial-gradient(
+                        circle,
+                        rgba(61, 110, 47, 1) 21%,
+                        rgba(22, 22, 21, 0.08029149159663862) 65%
+                    );
                 }
-                .snake_food{
+                .snake_food {
                     background-image: url(/Snake_v_1.0_project/snakeFood.png);
                     background-position: center;
                     background-size: cover;
-                    
                 }
             }
 
-            .score_column{
-                width: 30vh ;
+            .score_column {
+                width: 30vh;
                 height: 484px;
-                
-                .score_block{
+
+                .score_block {
                     display: flex;
                     flex-direction: column;
                     padding-top: 25px;
                     align-items: center;
                     width: 100%;
                     height: 100%;
-                    box-shadow:  1px 1px 20px rgba(27, 107, 107, 0.718);
+                    box-shadow: 1px 1px 20px rgba(27, 107, 107, 0.718);
                     background: rgba(22, 22, 21, 0.887);
                     border-top-left-radius: 25px;
                     border-bottom-left-radius: 25px;
-                    
-                    .player_name_style{
-                       height: 10%;
-                       width: 90%;
-                       font-size: 30px;
-                       line-height: 36px;
-                       color: rgba(170, 145, 73, 0.731);
-                       text-transform: uppercase;
-                       font-family: 'Kdam Thmor Pro', sans-serif;
+
+                    .player_name_style {
+                        height: 10%;
+                        width: 90%;
+                        font-size: 30px;
+                        line-height: 36px;
+                        color: rgba(170, 145, 73, 0.731);
+                        text-transform: uppercase;
+                        font-family: "Kdam Thmor Pro", sans-serif;
                         text-shadow: 1px 1px 9px grey;
                         margin-bottom: 10px;
                     }
-                    .player_score_style{
+                    .player_score_style {
                         padding-top: 10px;
                         height: 10%;
                         width: 90%;
@@ -197,105 +234,133 @@
                         line-height: 36px;
                         color: rgba(170, 145, 73, 0.731);
                         text-transform: uppercase;
-                        font-family: 'Kdam Thmor Pro', sans-serif;
+                        font-family: "Kdam Thmor Pro", sans-serif;
                         text-shadow: 1px 1px 9px grey;
                         margin-bottom: 70px;
-
                     }
-                    .pause_btn{
+                    .pause_btn {
                         width: 150px;
                         height: 50px;
                         line-height: 50px;
                         text-align: center;
-                        font-family: 'Fascinate Inline', cursive;
+                        font-family: "Fascinate Inline", cursive;
                         font-size: 35px;
                         transition: 1s;
-                        &>a:link{
+                        & > a:link {
                             color: rgb(64, 61, 61);
                         }
-                        &>a:visited{
+                        & > a:visited {
                             color: rgb(64, 61, 61);
                         }
-                        &>a:hover{
+                        & > a:hover {
                             transition: 1s;
                             animation: mytextglow 1s infinite;
                             animation-direction: alternate;
                             color: aquamarine;
                         }
                         @keyframes mytextglow {
-                            0% {text-shadow: 1px 1px 1px aquamarine;} 
-                            25% {text-shadow: 1px 2px 5px  aquamarine;}
-                            50% {text-shadow: 2px 2px 10px  aquamarine;}
-                            75% {text-shadow: 2px 2px 15px  aquamarine;}
-                            100% {text-shadow: 2px 2px 20px  aquamarine;}
-                         }
-                        &>a:active{
+                            0% {
+                                text-shadow: 1px 1px 1px aquamarine;
+                            }
+                            25% {
+                                text-shadow: 1px 2px 5px aquamarine;
+                            }
+                            50% {
+                                text-shadow: 2px 2px 10px aquamarine;
+                            }
+                            75% {
+                                text-shadow: 2px 2px 15px aquamarine;
+                            }
+                            100% {
+                                text-shadow: 2px 2px 20px aquamarine;
+                            }
+                        }
+                        & > a:active {
                             color: rgb(64, 61, 61);
                         }
                     }
-                    .pause_btn_active{
-                        
+                    .pause_btn_active {
                         animation: mytextglow 1s infinite;
                         animation-direction: alternate;
                         color: aquamarine;
-                        &>a:link{
+                        & > a:link {
                             color: rgb(64, 61, 61);
                         }
-                        &>a:visited{
+                        & > a:visited {
                             color: rgb(64, 61, 61);
                         }
-                        &>a:hover{
+                        & > a:hover {
                             animation: mytextglow 1s infinite;
                             animation-direction: alternate;
                             color: aquamarine;
                         }
                         @keyframes mytextglow {
-                            0% {text-shadow: 1px 1px 1px aquamarine;} 
-                            25% {text-shadow: 1px 2px 5px  aquamarine;}
-                            50% {text-shadow: 2px 2px 10px  aquamarine;}
-                            75% {text-shadow: 2px 2px 15px  aquamarine;}
-                            100% {text-shadow: 2px 2px 20px  aquamarine;}
+                            0% {
+                                text-shadow: 1px 1px 1px aquamarine;
+                            }
+                            25% {
+                                text-shadow: 1px 2px 5px aquamarine;
+                            }
+                            50% {
+                                text-shadow: 2px 2px 10px aquamarine;
+                            }
+                            75% {
+                                text-shadow: 2px 2px 15px aquamarine;
+                            }
+                            100% {
+                                text-shadow: 2px 2px 20px aquamarine;
+                            }
                         }
                     }
-                    .resume_button{
+                    .resume_button {
                         visibility: hidden;
                         width: 150px;
                         height: 50px;
                         line-height: 50px;
                         text-align: center;
-                        font-family: 'Fascinate Inline', cursive;
+                        font-family: "Fascinate Inline", cursive;
                         font-size: 35px;
                         animation: mytextglow 1s infinite;
                         animation-direction: alternate;
                         color: aquamarine;
-                        &>a:link{
+                        & > a:link {
                             color: aquamarine;
                         }
-                        &>a:visited{
+                        & > a:visited {
                             color: aquamarine;
                         }
-                        &>a:hover{
+                        & > a:hover {
                             color: azure;
                         }
                         @keyframes mytextglow {
-                            0% {text-shadow: 1px 1px 1px aquamarine;} 
-                            25% {text-shadow: 1px 2px 5px  aquamarine;}
-                            50% {text-shadow: 2px 2px 10px  aquamarine;}
-                            75% {text-shadow: 2px 2px 15px  aquamarine;}
-                            100% {text-shadow: 2px 2px 20px  aquamarine;}
-                         }
-                        &>a:active{
+                            0% {
+                                text-shadow: 1px 1px 1px aquamarine;
+                            }
+                            25% {
+                                text-shadow: 1px 2px 5px aquamarine;
+                            }
+                            50% {
+                                text-shadow: 2px 2px 10px aquamarine;
+                            }
+                            75% {
+                                text-shadow: 2px 2px 15px aquamarine;
+                            }
+                            100% {
+                                text-shadow: 2px 2px 20px aquamarine;
+                            }
+                        }
+                        & > a:active {
                             color: aquamarine;
-                        } 
+                        }
                     }
                 }
             }
 
-            .best_score_column{
-                width: 30vh ;
+            .best_score_column {
+                width: 30vh;
                 height: 484px;
-                
-                .best_score_block{
+
+                .best_score_block {
                     display: flex;
                     flex-direction: column;
                     padding-top: 25px;
@@ -303,35 +368,36 @@
                     text-align: right;
                     width: 100%;
                     height: 100%;
-                    box-shadow:  1px 1px 20px rgba(27, 107, 107, 0.718);
+                    box-shadow: 1px 1px 20px rgba(27, 107, 107, 0.718);
                     background: rgba(22, 22, 21, 0.887);
                     border-top-right-radius: 25px;
                     border-bottom-right-radius: 25px;
 
-                    .best_block_title{
+                    .best_block_title {
                         height: 10%;
                         width: 90%;
                         font-size: 30px;
                         line-height: 36px;
                         color: rgba(170, 145, 73, 0.731);
                         text-transform: uppercase;
-                        font-family: 'Kdam Thmor Pro', sans-serif;
-                         text-shadow: 1px 1px 9px grey;
-                         margin-bottom: 10px; 
-                    }
-                    
-                    .best_player_name{
-                       height: 10%;
-                       width: 90%;
-                       font-size: 30px;
-                       line-height: 36px;
-                       color: rgba(170, 145, 73, 0.731);
-                       text-transform: uppercase;
-                       font-family: 'Kdam Thmor Pro', sans-serif;
+                        font-family: "Kdam Thmor Pro", sans-serif;
                         text-shadow: 1px 1px 9px grey;
                         margin-bottom: 10px;
                     }
-                    .best_player_score{
+
+                    .best_player_name {
+                        height: 10%;
+                        width: 90%;
+                        font-size: 30px;
+                        line-height: 36px;
+                        color: rgba(170, 145, 73, 0.731);
+                        text-transform: uppercase;
+                        font-family: "Kdam Thmor Pro", sans-serif;
+                        text-shadow: 1px 1px 9px grey;
+                        margin-bottom: 10px;
+                        padding-top: 10px;
+                    }
+                    .best_player_score {
                         padding-top: 10px;
                         height: 10%;
                         width: 90%;
@@ -339,47 +405,45 @@
                         line-height: 36px;
                         color: rgba(170, 145, 73, 0.731);
                         text-transform: uppercase;
-                        font-family: 'Kdam Thmor Pro', sans-serif;
+                        font-family: "Kdam Thmor Pro", sans-serif;
                         text-shadow: 1px 1px 9px grey;
-
                     }
                 }
             }
         }
 
-        .game_over_page{
-            display: none;  // display none on new game clicking 
+        .game_over_page {
+            display: none; // display none on new game clicking
             width: 100vh;
             height: 100vh;
             margin: 0 auto;
-            .game_over_block{
+            .game_over_block {
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
                 align-items: center;
                 padding-top: 25vh;
-                .game_over_text{
-                    font-family: 'Kdam Thmor Pro', sans-serif;
+                .game_over_text {
+                    font-family: "Kdam Thmor Pro", sans-serif;
                     text-shadow: 6px 4px 32px rgb(245, 245, 245);
                     color: rgb(52, 48, 40);
-                    font-size: 24px; 
+                    font-size: 24px;
                     margin-bottom: 100px;
                 }
 
-                .new_game_button{
-
-                    #new_game_btn{
+                .new_game_button {
+                    #new_game_btn {
                         display: block;
-                        font-family: 'Kdam Thmor Pro', sans-serif;
+                        font-family: "Kdam Thmor Pro", sans-serif;
                         font-size: 24px;
                         transition: 1s;
-                        &:link{
+                        &:link {
                             color: rgb(64, 61, 61);
                         }
-                        &:visited{
+                        &:visited {
                             color: rgb(64, 61, 61);
                         }
-                        &:hover{
+                        &:hover {
                             transition: font-size 1s;
                             font-size: 38px;
                             animation: mytextglow 1s infinite;
@@ -387,40 +451,45 @@
                             color: aquamarine;
                         }
                         @keyframes mytextglow {
-                            0% {text-shadow: 1px 1px 1px aquamarine;} 
-                            25% {text-shadow: 1px 2px 5px  aquamarine;}
-                            50% {text-shadow: 2px 2px 10px  aquamarine;}
-                            75% {text-shadow: 2px 2px 15px  aquamarine;}
-                            100% {text-shadow: 2px 2px 20px  aquamarine;}
-                         }
-                        &>a:active{
+                            0% {
+                                text-shadow: 1px 1px 1px aquamarine;
+                            }
+                            25% {
+                                text-shadow: 1px 2px 5px aquamarine;
+                            }
+                            50% {
+                                text-shadow: 2px 2px 10px aquamarine;
+                            }
+                            75% {
+                                text-shadow: 2px 2px 15px aquamarine;
+                            }
+                            100% {
+                                text-shadow: 2px 2px 20px aquamarine;
+                            }
+                        }
+                        & > a:active {
                             color: rgb(64, 61, 61);
                         }
-
                     }
                 }
             }
         }
-           
 
-        .footer{
+        .footer {
             display: flex;
             flex-direction: column;
-            visibility:hidden;
+            visibility: hidden;
             padding-top: 40px;
             height: 100px;
             width: 100%;
-            font-family: 'Poppins', sans-serif;
+            font-family: "Poppins", sans-serif;
             font-size: 24px;
             text-align: center;
             text-transform: uppercase;
             color: rgb(193, 188, 188);
-            font-family: 'Kdam Thmor Pro', sans-serif;
-           
+            font-family: "Kdam Thmor Pro", sans-serif;
         }
-
     }
 }
 
 // adding style for user info and score
-

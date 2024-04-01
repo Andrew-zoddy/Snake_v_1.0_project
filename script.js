@@ -1,8 +1,8 @@
 
 //variables
 
-const gameFieldSize = 20 * 20;
-let speed = 300;
+const gameFieldSize = 20 * 20; // todo - add game field size option
+let speed = 300; // todo - add speed options
 let direction;
 let rnd;   
 let snakeHead;
