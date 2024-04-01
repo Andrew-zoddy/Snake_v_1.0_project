@@ -224,7 +224,7 @@ h1, h2, h3, h4, h5, h6 {
   height: 24px;
 }
 .wrapper .container .main #game_field .snake_head {
-  background-image: url(../img/snake_head.jpeg);
+  background-image: url(/Snake_v_1.0_project/snake_head.jpeg);
   background-position: center;
   background-size: cover;
   border-radius: 50%;
@@ -235,7 +235,7 @@ h1, h2, h3, h4, h5, h6 {
   background: radial-gradient(circle, rgb(61, 110, 47) 21%, rgba(22, 22, 21, 0.0802914916) 65%);
 }
 .wrapper .container .main #game_field .snake_food {
-  background-image: url(../img/snakeFood.png);
+  background-image: url(/Snake_v_1.0_project/snakeFood.png);
   background-position: center;
   background-size: cover;
 }
